@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+
+@layer base {
+  :root {
+    --background: 0 0% 12%;
+    --foreground: 0 0% 88%;
+
+    --primary: 188 65% 27%;
+  }
+}
+
+@layer base {
+  body {
+    @apply grid place-items-center bg-background text-foreground min-h-[30rem] h-screen;
+  }
+}
